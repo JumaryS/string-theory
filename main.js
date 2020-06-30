@@ -57,10 +57,26 @@ console.log(repeatIt('hello', 3))
 
 
 
-const truncate = function (){
-  
+const truncate = function (str, num){
+  if (num >3){
+str = str.slice(0,num-3)
+str = str.concat('...')
+return str
 }
- /********************************************
+else{
+  str= str.slice(0,num);
+  str= str.slice('...')
+}
+
+  return str
+}
+console.log(truncate("hello worldhfhfhjfjfjjdfhfhh",18))
+
+
+
+
+
+/********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
  *           PLEASE DON'T TOUCH!            *
  ********************************************/
