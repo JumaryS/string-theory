@@ -20,7 +20,7 @@ console.log(indexedChars("hello"))
 //instead of index char because the str[i] is added before
 // the i
 
-const excliam = function (str){
+const exclaim = function (str){
 
 let result = ''
 //
@@ -37,8 +37,29 @@ for (let i =0 ; i < str.length; i ++){
 return result // when you put the return a bit early you are going to run the function
 // without it looping through every possibility
 }
-console.log(excliam('hello?'))
+console.log(exclaim('hello.'))
+console.log(exclaim('hey?'))
 
+
+
+
+const repeatIt = function(str, num){
+let repeat = ''
+
+while (num>0){
+  repeat += str
+  num --
+}
+return repeat
+}
+console.log(repeatIt('hello', 3))
+
+
+
+
+const truncate = function (){
+  
+}
  /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
  *           PLEASE DON'T TOUCH!            *
