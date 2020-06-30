@@ -26,11 +26,15 @@ let result = ''
 //
 for (let i =0 ; i < str.length; i ++){
   if (str[i] === '?' || str[i] === '.'){
+    
+    result= result  +'!'
   }
-  result= result + str +'!'
+  else{
+    result = result + str[i]
+  }
   
-  return result
 }
+return result
 }
 console.log(excliam('hello?'))
 
