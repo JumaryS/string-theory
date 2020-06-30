@@ -3,12 +3,36 @@
  ******************/
 
 
+const indexedChars = function(str){
+  let result = ''
+  // let index = str[i]
+  // let index = 
 
+  for(let i= 0; i <str.length; i ++){
+    result+=i+str[i] 
+  }
+  return result  // remeber to return
+}
 
+console.log(indexedChars("hello"))
 
+// result += str[i]+ i  will give you char index 
+//instead of index char because the str[i] is added before
+// the i
 
+const excliam = function (str){
 
-
+let result = ''
+//
+for (let i =0 ; i < str.length; i ++){
+  if (str[i] === '?' || str[i] === '.'){
+  }
+  result= result + str +'!'
+  
+  return result
+}
+}
+console.log(excliam('hello?'))
 
  /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
