@@ -2,6 +2,8 @@
  * YOUR CODE HERE *
  ******************/
 
+const { TestScheduler } = require("jest")
+
 
 const indexedChars = function(str){
   let result = ''
@@ -71,8 +73,33 @@ return result+ '...'
 console.log(truncate("hello worldhfhfhjfjfjjdfhfhh"))
 
 
+// const ciEmailify= function (name){
+  
+//   // let email= '@codeimmersives.com'
+//   let result = ''
+//   for(let i=0; i < name.lenght;i++ ){
+//   if (name[i] === ' '){
+//     result= result + '.'
+//   }  else{
+//     result = result + name[i]
+//   }
+// }
+// return result  + '@codeimmersives.com'
+// }
+// console.log(ciEmailify('Jumary Sanchez'))// what was wrong with this code
 
-
+const ciEmailify= function(name) {
+  let result = '';
+  let email= '@codeimmersives.com'
+  for (let i = 0; i < name.length; i++){
+    if(name[i] === ' '){
+      result = result + '.';
+    }else {
+      result = result + name[i];
+    }
+  }
+  return result.toLocaleLowerCase() + email;
+}
 
 /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
