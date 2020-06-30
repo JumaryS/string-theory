@@ -32,9 +32,10 @@ for (let i =0 ; i < str.length; i ++){
   else{
     result = result + str[i]
   }
-  
+  // I had return here which prevented the full loop
 }
-return result
+return result // when you put the return a bit early you are going to run the function
+// without it looping through every possibility
 }
 console.log(excliam('hello?'))
 
