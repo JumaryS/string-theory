@@ -57,20 +57,18 @@ console.log(repeatIt('hello', 3))
 
 
 
-const truncate = function (str, num){
-  if (num >3){
-str = str.slice(0,num-3)
-str = str.concat('...')
-return str
+const truncate = function (str){
+  let result =''
+  if (str.length <=18){
+    return str // if the str is 18 or greater then just return the str without the concat "..."
+  }
+  for (let i=0; i < 15; i++){ // we started the str to loop to the 15th char and after we follow with the  '...'
+    result = result + str[i]
+    
 }
-else{
-  str= str.slice(0,num);
-  str= str.slice('...')
+return result+ '...'
 }
-
-  return str
-}
-console.log(truncate("hello worldhfhfhjfjfjjdfhfhh",18))
+console.log(truncate("hello worldhfhfhjfjfjjdfhfhh"))
 
 
 
