@@ -110,7 +110,7 @@ for(let i=str.length-1; i>=0; i--){
 }return reverse
 
 }
-function onlyVowels(vowels) {
+const onlyVowels= function (vowels) {
   let result = '' 
 
   for (i = 0; i <= vowels.length; i++) {
@@ -123,7 +123,7 @@ function onlyVowels(vowels) {
   
 
 
-  function titleCase(str) {
+  const titleCase =function titleCase(str) {
     let result = '';
     for (let i = 0; i < str.length; i++){
       let indexMinus = str[i -1]
@@ -137,6 +137,21 @@ function onlyVowels(vowels) {
     }
   }
   return result;
+  }
+
+
+  const camelCase = function(str){
+    // let result = ''
+    let space = ' '
+    for(let i=0; i <str.length; i ++){
+      if (str[i] === space){
+    //     result = result + str.split(' ').join('')}
+    // }return result
+        str.split(' ').join('')
+
+      }
+    
+    }
   }
 
 
