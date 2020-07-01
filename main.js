@@ -140,22 +140,37 @@ const onlyVowels= function (vowels) {
   }
 
 
+  // const camelCase = function(str){
+  //   let result = ''
+  //   let space = ' '
+  //   for(let i=0; i <str.length; i ++){
+  //     if (i === 0){
+  //         result += str[i].toLowerCase
+  //     }
+  //     else if (str[i] === space){
+  //       return  str.split(' ').join('')
+
+  //     }
+  //   }
+
+  // }
+
   const camelCase = function(str){
-    // let result = ''
+    let result = ''
     let space = ' '
-    for(let i=0; i <str.length; i ++){
-      if (str[i] === space){
-    //     result = result + str.split(' ').join('')}
-    // }return result
-        str.split(' ').join('')
 
+    for(let i =0; i<str.length ; i ++){
+      if (i === 0){
+        result = result + str[i].toLowerCase
       }
-    
+      else if (str[i] === space){
+        return  str.split(' ').join('')
     }
-  }
+  }return result
+}
 
-const crazyCase= function(str){
- let result = ''
+  const crazyCase= function(str){
+    let result = ''
 
   for(let i=0; i <str.length;i++){
     if( i % 2 === 0){
