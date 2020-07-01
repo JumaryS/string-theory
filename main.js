@@ -100,6 +100,52 @@ const ciEmailify= function(name) {
   }
   return result.toLocaleLowerCase() + email;
 }
+console.log(ciEmailify("jumary Sanchez"))
+
+
+const reverse = function(str){
+ let reverse= ''
+for(let i=str.length-1; i>=0; i--){
+  reverse = reverse+str[i]
+}return reverse
+
+}
+function onlyVowels(vowels) {
+  let result = '' 
+
+  for (i = 0; i <= vowels.length; i++) {
+    if ('aeiouAEIOU'.includes(vowels[i])) {
+
+      result = result + vowels[i];}
+  }
+  return result;
+  }
+  
+
+
+  function titleCase(str) {
+    let result = '';
+    for (let i = 0; i < str.length; i++){
+      let indexMinus = str[i -1]
+      // let index= [i]
+
+      if (indexMinus === ' ' || i === 0){
+      result = result + str[i].toUpperCase();
+    }
+    else {
+      result = result + str[i].toLowerCase();
+    }
+  }
+  return result;
+  }
+
+
+
+
+
+
+
+
 
 /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
