@@ -98,7 +98,7 @@ const ciEmailify= function(name) {
       result = result + name[i];
     }
   }
-  return result.toLocaleLowerCase() + email;
+  return result.toLowerCase() + email;
 }
 console.log(ciEmailify("jumary Sanchez"))
 
